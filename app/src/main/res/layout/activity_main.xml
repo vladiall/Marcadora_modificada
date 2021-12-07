@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logotipoandroid"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/TeamText"
+        android:layout_width="402dp"
+        android:layout_height="63dp"
+        android:text="@string/team_1"
+        android:textAlignment="center"
+        android:textColor="#F57C00"
+        android:textColorHighlight="#A61414"
+        android:textColorLink="#C30C0C"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/decreaseTeam1"
+            style="@style/MinusButtons"
+            android:layout_width="74dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginBottom="134dp"
+            android:layout_toStartOf="@+id/score_1"
+            android:onClick="decreaseScore"
+            android:tint="#E64A19" />
+
+        <TextView
+            android:id="@+id/score_1"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/initial_count"
+            android:textColor="#E64A19"
+            android:textColorHighlight="#B51C1C" />
+
+        <ImageButton
+            android:id="@+id/increaseTeam1"
+            style="@style/PlusButtons"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="143dp"
+            android:layout_toEndOf="@+id/score_1"
+            android:onClick="increaseScore"
+            android:tint="#E64A19" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/team_2"
+            android:textAlignment="center"
+            android:textColor="#F57C00"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/decreaseTeam2"
+            style="@style/MinusButtons"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="decreaseScore" />
+
+        <TextView
+            android:id="@+id/score_2"
+            style="@style/ScoreText"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/increaseTeam2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginBottom="41dp"
+            android:layout_toStartOf="@+id/increaseTeam2"
+            android:layout_toEndOf="@+id/decreaseTeam2"
+            android:text="@string/initial_count"
+            android:textAlignment="center"
+            android:textColor="#E64A19"
+            android:textColorHighlight="#A50909"
+            android:textColorLink="#980E0E"
+            tools:text="0" />
+
+        <ImageButton
+            android:id="@+id/increaseTeam2"
+            style="@style/PlusButtons"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="133dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="145dp"
+            android:onClick="increaseScore" />
+    </RelativeLayout>
+
+</LinearLayout>
